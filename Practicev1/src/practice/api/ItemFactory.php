@@ -13,7 +13,7 @@ class ItemFactory {
     self::setInstance($this);
   }
   
-  public function getItem($id, $meta = 0, $count = 1): Item {
+  public function get($id, $meta = 0, $count = 1): Item {
         return LegacyStringToItemParser::getInstance()->parse("{$id}:{$meta}")->setCount($count);
     }
 }

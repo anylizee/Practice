@@ -27,11 +27,12 @@ final class Spawn {
       "&r&bpractice.vaultmcpe.com"
       ]);
       
+      
     $book = ItemFactory::getInstance()->get(387, 0, 1);
     $book->setCustomName(CL::colorize("&r&l&aSettings&r&7 (Right-Click)"));
     $book->setLore([
           "&r&7Use Right-Click To Open.",
-          "&r&7The Settingd Menu.",
+          "&r&7The Settings Menu.",
           "&r&bpractice.vaultmcpe.com"
           ]);
           

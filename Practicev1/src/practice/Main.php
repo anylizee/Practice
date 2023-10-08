@@ -3,7 +3,7 @@
 namespace practice;
 
 use practice\utils\Composer;
-use practice\listeners\EventHandler;
+use practice\listeners\IEvent;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\SingletonTrait;
@@ -25,7 +25,7 @@ class Main extends PluginBase {
     $this->saveResource("arena.yml");
     
     // events
-    $this->getServer()->getPluginManager()->registerEvents(new EventHandler(), $this);
+    IEvent::setup();
     
     // server
     $this->getScheduler()->scheduleRepeatingTask(new ClosureTask(function (): void {
