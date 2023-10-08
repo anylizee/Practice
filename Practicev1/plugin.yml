@@ -1,0 +1,7 @@
+name: Practice
+version: 1.0-STABLE
+api: 5.0.0
+authors:
+  - Stellics
+  - Oaiqa
+main: practice\Main
